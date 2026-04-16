@@ -1,11 +1,46 @@
 ---
-title: "ISSS608-VAA"
+title: ""
 ---
 
-This is a Quarto website.
+# Hi, I’m Roopa ☁️
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+<div class="intro">
+A visual analytics journey presented in a wholesome space 🐾
+</div>
 
-```{r}
-1 + 1
-```
+![](Images/snoopy-main.png){class="snoopy-img"}
+
+---
+
+## 🌼 Explore
+
+::: {.grid}
+
+::: {.g-col-4 .card}
+### 🧪 Hands-on Exercises
+Guided practice and learning  
+
+[View →](Hands-on_Ex/index.qmd)
+:::
+
+::: {.g-col-4 .card}
+### 🏠 Take-home Exercises
+Assignments and deeper work  
+
+[View →](Take-home_Ex/index.qmd)
+:::
+
+::: {.g-col-4 .card}
+### 🏫 In-class Exercises
+Session-based work  
+
+[View →](In-class_Ex/index.qmd)
+:::
+
+:::
+
+---
+
+<div class="footer-note">
+built with ☁️ and snoopy!
+</div>

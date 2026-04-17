@@ -32,13 +32,104 @@
     "href": "In-Class_Ex/index.html",
     "title": "In-Class Exercises 🏫",
     "section": "",
-    "text": "In-Class Exercises\n\nWork completed during class sessions\n\n\n\n\nSession 1\nComing soon"
+    "text": "Work completed during class sessions\n\n\n\n\nSession 1\nComing soon"
   },
   {
     "objectID": "Take-Home_Ex/index.html",
     "href": "Take-Home_Ex/index.html",
     "title": "Take-Home Exercises 🏠",
     "section": "",
-    "text": "Take-Home Exercises\n\nAssignments and deeper explorations\n\n\n\n\nAssignment 1\nComing soon"
+    "text": "Assignments and deeper explorations\n\n\n\n\nAssignment 1\nComing soon"
+  },
+  {
+    "objectID": "Hands-on_Ex/Hands-on_Ex01/Hands-on_Ex01.html",
+    "href": "Hands-on_Ex/Hands-on_Ex01/Hands-on_Ex01.html",
+    "title": "Hands-on Exercise 1: ggplot2 Basics",
+    "section": "",
+    "text": "This exercise walks through the core building blocks of ggplot2 — R’s grammar-of-graphics plotting library — using exam score data from a cohort of Primary 3 students. We cover everything from basic bar charts to layered plots with statistics and facets.\nThe data has 7 variables:\n\nCategorical: ID, CLASS, GENDER, RACE\nContinuous: MATHS, ENGLISH, SCIENCE"
+  },
+  {
+    "objectID": "Hands-on_Ex/Hands-on_Ex01/Hands-on_Ex01.html#overview",
+    "href": "Hands-on_Ex/Hands-on_Ex01/Hands-on_Ex01.html#overview",
+    "title": "Hands-on Exercise 1: ggplot2 Basics",
+    "section": "",
+    "text": "This exercise walks through the core building blocks of ggplot2 — R’s grammar-of-graphics plotting library — using exam score data from a cohort of Primary 3 students. We cover everything from basic bar charts to layered plots with statistics and facets.\nThe data has 7 variables:\n\nCategorical: ID, CLASS, GENDER, RACE\nContinuous: MATHS, ENGLISH, SCIENCE"
+  },
+  {
+    "objectID": "Hands-on_Ex/Hands-on_Ex01/Hands-on_Ex01.html#getting-started",
+    "href": "Hands-on_Ex/Hands-on_Ex01/Hands-on_Ex01.html#getting-started",
+    "title": "Hands-on Exercise 1: ggplot2 Basics",
+    "section": "2 Getting Started",
+    "text": "2 Getting Started\n\n2.1 Loading Packages\nWe use pacman to load tidyverse (which bundles ggplot2, readr, and more).\n\n\nShow code\npacman::p_load(tidyverse)\n\n\n\n\n2.2 Importing the Data\n\n\nShow code\nexam_data &lt;- read_csv(\"data/Exam_data.csv\")\nglimpse(exam_data)\n\n\nRows: 322\nColumns: 7\n$ ID      &lt;chr&gt; \"Student321\", \"Student305\", \"Student289\", \"Student227\", \"Stude…\n$ CLASS   &lt;chr&gt; \"3I\", \"3I\", \"3H\", \"3F\", \"3I\", \"3I\", \"3I\", \"3I\", \"3I\", \"3H\", \"3…\n$ GENDER  &lt;chr&gt; \"Male\", \"Female\", \"Male\", \"Male\", \"Male\", \"Female\", \"Male\", \"M…\n$ RACE    &lt;chr&gt; \"Malay\", \"Malay\", \"Chinese\", \"Chinese\", \"Malay\", \"Malay\", \"Chi…\n$ ENGLISH &lt;dbl&gt; 21, 24, 26, 27, 27, 31, 31, 31, 33, 34, 34, 36, 36, 36, 37, 38…\n$ MATHS   &lt;dbl&gt; 9, 22, 16, 77, 11, 16, 21, 18, 19, 49, 39, 35, 23, 36, 49, 30,…\n$ SCIENCE &lt;dbl&gt; 15, 16, 16, 31, 25, 16, 25, 27, 15, 37, 42, 22, 32, 36, 35, 45…\n\n\n\nWhat I see: 322 students, scores ranging widely — MATHS goes from single digits to near-perfect. Should be interesting to visualise!"
+  },
+  {
+    "objectID": "Hands-on_Ex/Hands-on_Ex01/Hands-on_Ex01.html#why-ggplot2",
+    "href": "Hands-on_Ex/Hands-on_Ex01/Hands-on_Ex01.html#why-ggplot2",
+    "title": "Hands-on Exercise 1: ggplot2 Basics",
+    "section": "3 Why ggplot2?",
+    "text": "3 Why ggplot2?\nBase R can make a histogram in one line:\n\n\nShow code\nhist(exam_data$MATHS)\n\n\n\n\n\n\n\n\n\nBut ggplot2 gives us a grammar — a structured, composable way of building charts. Instead of memorising different function signatures for every plot type, you always think in terms of:\n\nData — what am I plotting?\nAesthetics — what maps to x, y, colour, size?\nGeom — what shape should represent the data?\nExtras — stats, facets, themes, coordinates"
+  },
+  {
+    "objectID": "Hands-on_Ex/Hands-on_Ex01/Hands-on_Ex01.html#the-grammar-of-graphics-layers",
+    "href": "Hands-on_Ex/Hands-on_Ex01/Hands-on_Ex01.html#the-grammar-of-graphics-layers",
+    "title": "Hands-on Exercise 1: ggplot2 Basics",
+    "section": "4 The Grammar of Graphics — Layers",
+    "text": "4 The Grammar of Graphics — Layers\nggplot2 is built on Leland Wilkinson’s Grammar of Graphics. A plot is made of stacked layers:\n\n\n\nLayer\nWhat it does\n\n\n\n\ndata\nThe dataset\n\n\naes()\nMaps variables to visual properties\n\n\ngeom_*()\nThe actual chart shape\n\n\nstat_*()\nStatistical transformations\n\n\nfacet_*()\nSplit into sub-plots\n\n\ncoord_*()\nCoordinate system\n\n\ntheme_*()\nNon-data styling"
+  },
+  {
+    "objectID": "Hands-on_Ex/Hands-on_Ex01/Hands-on_Ex01.html#essential-elements",
+    "href": "Hands-on_Ex/Hands-on_Ex01/Hands-on_Ex01.html#essential-elements",
+    "title": "Hands-on Exercise 1: ggplot2 Basics",
+    "section": "5 Essential Elements",
+    "text": "5 Essential Elements\n\n5.1 Data — the blank canvas\nCalling ggplot() alone initialises the object with no plot yet — just a blank canvas.\n\n\nShow code\nggplot(data = exam_data)\n\n\n\n\n\n\n\n\n\n\n\n5.2 Aesthetics — setting the axes\nAdding aes() tells ggplot what variable goes where. Here we set the x-axis to MATHS scores.\n\n\nShow code\nggplot(data = exam_data,\n       aes(x = MATHS))"
+  },
+  {
+    "objectID": "Hands-on_Ex/Hands-on_Ex01/Hands-on_Ex01.html#geometric-objects-geoms",
+    "href": "Hands-on_Ex/Hands-on_Ex01/Hands-on_Ex01.html#geometric-objects-geoms",
+    "title": "Hands-on Exercise 1: ggplot2 Basics",
+    "section": "6 Geometric Objects (geoms)",
+    "text": "6 Geometric Objects (geoms)\n\n6.1 Bar Chart — geom_bar()\nHow many students are there per race group?\n\n\nShow code\nggplot(data = exam_data,\n       aes(x = RACE)) +\n  geom_bar(fill = \"#4C72B0\", color = \"white\") +\n  labs(title = \"Student Count by Race\",\n       x = \"Race\", y = \"Count\") +\n  theme_minimal()\n\n\n\n\n\n\n\n\n\n\nNote: I added a colour and theme here right away — no reason to leave plots looking dull.\n\n\n\n6.2 Dot Plot — geom_dotplot()\nEach dot = one student’s MATHS score. A more granular look at the distribution than a histogram.\n\n\nShow code\nggplot(data = exam_data,\n       aes(x = MATHS)) +\n  geom_dotplot(binwidth = 2.5,\n               dotsize = 0.5,\n               fill = \"#55A868\") +\n  scale_y_continuous(NULL, breaks = NULL) +\n  labs(title = \"Distribution of MATHS Scores (Dot Plot)\",\n       x = \"MATHS Score\") +\n  theme_minimal()\n\n\n\n\n\n\n\n\n\n\nWhy turn off the y-axis? The raw y-axis in dotplots shows proportions, not counts — it’s misleading. Removing it makes the chart cleaner.\n\n\n\n6.3 Histogram — geom_histogram()\nA classic. Default uses 30 bins — usually too many.\n\n\nShow code\nggplot(data = exam_data,\n       aes(x = MATHS)) +\n  geom_histogram(bins = 20,\n                 color = \"white\",\n                 fill = \"#4C72B0\") +\n  labs(title = \"Distribution of MATHS Scores\",\n       x = \"MATHS Score\", y = \"Count\") +\n  theme_minimal()\n\n\n\n\n\n\n\n\n\n\n\n6.4 Histogram by Gender — mapping fill inside aes()\nWhen fill is inside aes(), it maps a variable (GENDER) to colour — ggplot handles the colouring automatically.\n\n\nShow code\nggplot(data = exam_data,\n       aes(x = MATHS,\n           fill = GENDER)) +\n  geom_histogram(bins = 20,\n                 color = \"grey30\",\n                 alpha = 0.8) +\n  scale_fill_manual(values = c(\"Female\" = \"#DD8452\", \"Male\" = \"#4C72B0\")) +\n  labs(title = \"MATHS Score Distribution by Gender\",\n       x = \"MATHS Score\", y = \"Count\", fill = \"Gender\") +\n  theme_minimal()\n\n\n\n\n\n\n\n\n\n\nMy take: Males seem to have a wider spread. Density plots (next) will make this clearer.\n\n\n\n6.5 Density Plot — geom_density()\nA smoothed alternative to the histogram, great for comparing distributions.\n\n\nShow code\nggplot(data = exam_data,\n       aes(x = MATHS,\n           colour = GENDER)) +\n  geom_density(linewidth = 1) +\n  scale_colour_manual(values = c(\"Female\" = \"#DD8452\", \"Male\" = \"#4C72B0\")) +\n  labs(title = \"MATHS Score Density by Gender\",\n       x = \"MATHS Score\", y = \"Density\", colour = \"Gender\") +\n  theme_minimal()\n\n\n\n\n\n\n\n\n\n\n\n6.6 Boxplot — geom_boxplot()\nShows the median, IQR, and outliers for MATHS by gender. Adding notch = TRUE helps visually test if medians differ significantly.\n\n\nShow code\nggplot(data = exam_data,\n       aes(y = MATHS, x = GENDER,\n           fill = GENDER)) +\n  geom_boxplot(notch = TRUE, alpha = 0.7) +\n  scale_fill_manual(values = c(\"Female\" = \"#DD8452\", \"Male\" = \"#4C72B0\")) +\n  labs(title = \"MATHS Score by Gender (Notched Boxplot)\",\n       x = \"Gender\", y = \"MATHS Score\") +\n  theme_minimal() +\n  theme(legend.position = \"none\")\n\n\n\n\n\n\n\n\n\n\nNotches: If the notches don’t overlap between groups, that’s evidence the medians are statistically different.\n\n\n\n6.7 Violin Plot — geom_violin()\nLike a boxplot but shows the full distribution shape — great for spotting bimodal patterns.\n\n\nShow code\nggplot(data = exam_data,\n       aes(y = MATHS, x = GENDER,\n           fill = GENDER)) +\n  geom_violin(alpha = 0.7) +\n  scale_fill_manual(values = c(\"Female\" = \"#DD8452\", \"Male\" = \"#4C72B0\")) +\n  labs(title = \"MATHS Score Distribution by Gender (Violin)\",\n       x = \"Gender\", y = \"MATHS Score\") +\n  theme_minimal() +\n  theme(legend.position = \"none\")\n\n\n\n\n\n\n\n\n\n\n\n6.8 Scatter Plot — geom_point()\nDo students who score well in MATHS also score well in ENGLISH?\n\n\nShow code\nggplot(data = exam_data,\n       aes(x = MATHS, y = ENGLISH)) +\n  geom_point(colour = \"#4C72B0\", alpha = 0.5, size = 1.5) +\n  labs(title = \"MATHS vs ENGLISH Scores\",\n       x = \"MATHS Score\", y = \"ENGLISH Score\") +\n  theme_minimal()\n\n\n\n\n\n\n\n\n\n\n\n6.9 Combining Geoms — Boxplot + Jitter\nYou can stack multiple geoms. Here the individual data points are overlaid on the boxplot.\n\n\nShow code\nggplot(data = exam_data,\n       aes(y = MATHS, x = GENDER,\n           fill = GENDER)) +\n  geom_boxplot(alpha = 0.5, outlier.shape = NA) +\n  geom_point(position = \"jitter\", size = 0.6, alpha = 0.4) +\n  scale_fill_manual(values = c(\"Female\" = \"#DD8452\", \"Male\" = \"#4C72B0\")) +\n  labs(title = \"MATHS Score by Gender — Boxplot with Points\",\n       x = \"Gender\", y = \"MATHS Score\") +\n  theme_minimal() +\n  theme(legend.position = \"none\")\n\n\n\n\n\n\n\n\n\n\nWhy jitter? Without it, points stack on top of each other and you lose information. Jitter adds a tiny random horizontal offset so you can see density."
+  },
+  {
+    "objectID": "Hands-on_Ex/Hands-on_Ex01/Hands-on_Ex01.html#statistics-stat",
+    "href": "Hands-on_Ex/Hands-on_Ex01/Hands-on_Ex01.html#statistics-stat",
+    "title": "Hands-on Exercise 1: ggplot2 Basics",
+    "section": "7 Statistics (stat)",
+    "text": "7 Statistics (stat)\n\n7.1 Adding the Mean to a Boxplot\nBoxplots show the median, not the mean. Here we add the mean as a red diamond.\n\n\nShow code\nggplot(data = exam_data,\n       aes(y = MATHS, x = GENDER)) +\n  geom_boxplot(fill = \"#C8D8E8\") +\n  stat_summary(geom = \"point\",\n               fun = \"mean\",\n               colour = \"red\",\n               size = 4,\n               shape = 18) +\n  labs(title = \"MATHS by Gender — Mean shown as ◆\",\n       x = \"Gender\", y = \"MATHS Score\") +\n  theme_minimal()\n\n\n\n\n\n\n\n\n\n\n\n7.2 Best Fit Line on a Scatter Plot\ngeom_smooth() adds a trend line. Using method = lm gives a straight linear regression line.\n\n\nShow code\nggplot(data = exam_data,\n       aes(x = MATHS, y = ENGLISH)) +\n  geom_point(colour = \"#4C72B0\", alpha = 0.4, size = 1.5) +\n  geom_smooth(method = lm, linewidth = 0.8,\n              colour = \"#DD8452\", fill = \"#DD8452\", alpha = 0.15) +\n  coord_cartesian(xlim = c(0, 100), ylim = c(0, 100)) +\n  labs(title = \"MATHS vs ENGLISH — with Linear Trend\",\n       x = \"MATHS Score\", y = \"ENGLISH Score\") +\n  theme_minimal()\n\n\n\n\n\n\n\n\n\n\ncoord_cartesian() forces both axes to the same 0–100 scale so the comparison is fair and not visually distorted."
+  },
+  {
+    "objectID": "Hands-on_Ex/Hands-on_Ex01/Hands-on_Ex01.html#facets",
+    "href": "Hands-on_Ex/Hands-on_Ex01/Hands-on_Ex01.html#facets",
+    "title": "Hands-on Exercise 1: ggplot2 Basics",
+    "section": "8 Facets",
+    "text": "8 Facets\nFacets split one plot into multiple sub-plots by a category — a powerful way to compare across groups without overplotting.\n\n8.1 facet_wrap() — by Class\n\n\nShow code\nggplot(data = exam_data,\n       aes(x = MATHS)) +\n  geom_histogram(bins = 15, fill = \"#4C72B0\", colour = \"white\") +\n  facet_wrap(~ CLASS) +\n  labs(title = \"MATHS Score Distribution by Class\",\n       x = \"MATHS Score\", y = \"Count\") +\n  theme_minimal()\n\n\n\n\n\n\n\n\n\n\n\n8.2 facet_grid() — by Class in a grid\n\n\nShow code\nggplot(data = exam_data,\n       aes(x = MATHS)) +\n  geom_histogram(bins = 15, fill = \"#55A868\", colour = \"white\") +\n  facet_grid(~ CLASS) +\n  labs(title = \"MATHS Distribution by Class (Grid Layout)\",\n       x = \"MATHS Score\", y = \"Count\") +\n  theme_minimal()\n\n\n\n\n\n\n\n\n\n\nfacet_wrap vs facet_grid: facet_wrap flows panels like text — it wraps into rows automatically. facet_grid is rigid and always stays in a single row/column grid."
+  },
+  {
+    "objectID": "Hands-on_Ex/Hands-on_Ex01/Hands-on_Ex01.html#coordinates",
+    "href": "Hands-on_Ex/Hands-on_Ex01/Hands-on_Ex01.html#coordinates",
+    "title": "Hands-on Exercise 1: ggplot2 Basics",
+    "section": "9 Coordinates",
+    "text": "9 Coordinates\n\n9.1 Flipping a Bar Chart — coord_flip()\nWhen category labels are long, a horizontal bar chart is easier to read.\n\n\nShow code\nggplot(data = exam_data,\n       aes(x = RACE)) +\n  geom_bar(fill = \"#4C72B0\") +\n  coord_flip() +\n  labs(title = \"Student Count by Race (Horizontal)\",\n       x = \"Race\", y = \"Count\") +\n  theme_minimal()"
+  },
+  {
+    "objectID": "Hands-on_Ex/Hands-on_Ex01/Hands-on_Ex01.html#themes",
+    "href": "Hands-on_Ex/Hands-on_Ex01/Hands-on_Ex01.html#themes",
+    "title": "Hands-on Exercise 1: ggplot2 Basics",
+    "section": "10 Themes",
+    "text": "10 Themes\nThemes control the non-data look of a plot. Here’s the same chart with three different themes side-by-side in concept (shown individually):\n\n\nShow code\nbase_plot &lt;- ggplot(data = exam_data, aes(x = RACE)) +\n  geom_bar(fill = \"#4C72B0\") +\n  coord_flip() +\n  labs(x = \"Race\", y = \"Count\")\n\n# theme_gray (default)\nbase_plot + theme_gray() + labs(title = \"theme_gray()\")\n\n\n\n\n\n\n\n\n\n\n\nShow code\nbase_plot + theme_classic() + labs(title = \"theme_classic()\")\n\n\n\n\n\n\n\n\n\n\n\nShow code\nbase_plot + theme_minimal() + labs(title = \"theme_minimal()\")\n\n\n\n\n\n\n\n\n\n\nMy preference: theme_minimal() — clean, no unnecessary gridlines or grey background. Lets the data speak."
+  },
+  {
+    "objectID": "Hands-on_Ex/Hands-on_Ex01/Hands-on_Ex01.html#key-takeaways",
+    "href": "Hands-on_Ex/Hands-on_Ex01/Hands-on_Ex01.html#key-takeaways",
+    "title": "Hands-on Exercise 1: ggplot2 Basics",
+    "section": "11 Key Takeaways",
+    "text": "11 Key Takeaways\nBy working through this exercise, I’ve learned:\n\nggplot2 builds plots in layers — each + adds something new\naes() inside the call maps data to visuals; arguments outside set fixed values\nGeoms determine the chart type — and they can be combined\nstat_summary() lets you overlay computed statistics (like means) on any chart\nFacets are a powerful alternative to colour-coding when you have many groups\nThemes are purely cosmetic — theme_minimal() is clean and professional"
+  },
+  {
+    "objectID": "Hands-on_Ex/Hands-on_Ex01/Hands-on_Ex01.html#references",
+    "href": "Hands-on_Ex/Hands-on_Ex01/Hands-on_Ex01.html#references",
+    "title": "Hands-on Exercise 1: ggplot2 Basics",
+    "section": "12 References",
+    "text": "12 References\n\nHadley Wickham (2023) ggplot2: Elegant Graphics for Data Analysis\nWinston Chang (2013) R Graphics Cookbook\nKieran Healy (2019) Data Visualization: A Practical Introduction"
   }
 ]

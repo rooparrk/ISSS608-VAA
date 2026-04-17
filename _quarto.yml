@@ -3,20 +3,24 @@ project:
   output-dir: _site
 
 website:
-  title: "Roopa’s Visual Cloud ☁️"
+  title: ""
 
   navbar:
     left:
-      - text: Home
-        href: index.qmd
-      - text: Hands-on
-        href: Hands-on_Ex/
-      - text: Take-Home
-        href: Take-Home_Ex/
-      - text: In-Class
-        href: In-Class_Ex/
-      - text: About
-        href: about.qmd
+    - href: index.qmd
+      text: "☁️ Roopa’s Visual Cloud"
+      
+    right:
+    - text: Home
+      href: index.qmd
+    - text: Hands-on
+      href: Hands-on_Ex/
+    - text: Take-Home
+      href: Take-Home_Ex/
+    - text: In-Class
+      href: In-Class_Ex/
+    - text: About
+      href: about.qmd
 
   page-footer:
     center: "Roopa ☁️ | Visual Analytics"

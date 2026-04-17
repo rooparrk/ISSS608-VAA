@@ -133,6 +133,27 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-fa-hand-sparkles--hands-on" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text"><i class="fa-solid fa-hand-sparkles" aria-label="hand-sparkles"></i> Hands-on</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-fa-hand-sparkles--hands-on">    
+        <li>
+    <a class="dropdown-item" href="../../Hands-on_Ex/Hands-on_Ex01/Hands-on_Ex01.html">
+ <span class="dropdown-text">Exercise 1: ggplot2</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="../../Take-Home_Ex/"> 
+<span class="menu-text"><i class="fa-solid fa-magnifying-glass-chart" aria-label="magnifying-glass-chart"></i> Take-Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../In-Class_Ex/"> 
+<span class="menu-text"><i class="fa-solid fa-pen-to-square" aria-label="pen-to-square"></i> In-Class</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
     <a class="nav-link" href="../../index.html"> 
 <span class="menu-text"><i class="fa-solid fa-house-chimney" aria-label="house-chimney"></i></span></a>
@@ -144,20 +165,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li class="nav-item">
     <a class="nav-link" href="https://github.com/rooparrk"> 
 <span class="menu-text"><i class="fa-solid fa-seedling" aria-label="seedling"></i></span></a>
-  </li>  
-</ul>
-            <ul class="navbar-nav navbar-nav-scroll ms-auto">
-  <li class="nav-item">
-    <a class="nav-link" href="../../Hands-on_Ex/"> 
-<span class="menu-text">Hands-on</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../../Take-Home_Ex/"> 
-<span class="menu-text">Take-Home</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../../In-Class_Ex/"> 
-<span class="menu-text">In-Class</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -1343,10 +1350,10 @@ $ SCIENCE &lt;dbl&gt; 15, 16, 16, 31, 25, 16, 25, 27, 15, 37, 42, 22, 32, 36, 35
 <span id="cb24-25"><a href="#cb24-25" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb24-26"><a href="#cb24-26" aria-hidden="true" tabindex="-1"></a>The data has **7 variables**:</span>
 <span id="cb24-27"><a href="#cb24-27" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-28"><a href="#cb24-28" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Categorical**: <span class="in">`ID`</span>, <span class="in">`CLASS`</span>, <span class="in">`GENDER`</span>, <span class="in">`RACE`</span></span>
-<span id="cb24-29"><a href="#cb24-29" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Continuous**: <span class="in">`MATHS`</span>, <span class="in">`ENGLISH`</span>, <span class="in">`SCIENCE`</span></span>
+<span id="cb24-28"><a href="#cb24-28" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>**Categorical**: <span class="in">`ID`</span>, <span class="in">`CLASS`</span>, <span class="in">`GENDER`</span>, <span class="in">`RACE`</span></span>
+<span id="cb24-29"><a href="#cb24-29" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>**Continuous**: <span class="in">`MATHS`</span>, <span class="in">`ENGLISH`</span>, <span class="in">`SCIENCE`</span></span>
 <span id="cb24-30"><a href="#cb24-30" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-31"><a href="#cb24-31" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb24-31"><a href="#cb24-31" aria-hidden="true" tabindex="-1"></a>------------------------------------------------------------------------</span>
 <span id="cb24-32"><a href="#cb24-32" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb24-33"><a href="#cb24-33" aria-hidden="true" tabindex="-1"></a><span class="fu">## Getting Started</span></span>
 <span id="cb24-34"><a href="#cb24-34" aria-hidden="true" tabindex="-1"></a></span>
@@ -1367,7 +1374,7 @@ $ SCIENCE &lt;dbl&gt; 15, 16, 16, 31, 25, 16, 25, 27, 15, 37, 42, 22, 32, 36, 35
 <span id="cb24-53"><a href="#cb24-53" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb24-54"><a href="#cb24-54" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; **What I see:** 322 students, scores ranging widely — MATHS goes from single digits to near-perfect. Should be interesting to visualise!</span></span>
 <span id="cb24-55"><a href="#cb24-55" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-56"><a href="#cb24-56" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb24-56"><a href="#cb24-56" aria-hidden="true" tabindex="-1"></a>------------------------------------------------------------------------</span>
 <span id="cb24-57"><a href="#cb24-57" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb24-58"><a href="#cb24-58" aria-hidden="true" tabindex="-1"></a><span class="fu">## Why ggplot2?</span></span>
 <span id="cb24-59"><a href="#cb24-59" aria-hidden="true" tabindex="-1"></a></span>
@@ -1379,28 +1386,28 @@ $ SCIENCE &lt;dbl&gt; 15, 16, 16, 31, 25, 16, 25, 27, 15, 37, 42, 22, 32, 36, 35
 <span id="cb24-67"><a href="#cb24-67" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb24-68"><a href="#cb24-68" aria-hidden="true" tabindex="-1"></a>But ggplot2 gives us a **grammar** — a structured, composable way of building charts. Instead of memorising different function signatures for every plot type, you always think in terms of:</span>
 <span id="cb24-69"><a href="#cb24-69" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-70"><a href="#cb24-70" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>**Data** — what am I plotting?</span>
-<span id="cb24-71"><a href="#cb24-71" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>**Aesthetics** — what maps to x, y, colour, size?</span>
-<span id="cb24-72"><a href="#cb24-72" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>**Geom** — what shape should represent the data?</span>
-<span id="cb24-73"><a href="#cb24-73" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>**Extras** — stats, facets, themes, coordinates</span>
+<span id="cb24-70"><a href="#cb24-70" aria-hidden="true" tabindex="-1"></a><span class="ss">1.  </span>**Data** — what am I plotting?</span>
+<span id="cb24-71"><a href="#cb24-71" aria-hidden="true" tabindex="-1"></a><span class="ss">2.  </span>**Aesthetics** — what maps to x, y, colour, size?</span>
+<span id="cb24-72"><a href="#cb24-72" aria-hidden="true" tabindex="-1"></a><span class="ss">3.  </span>**Geom** — what shape should represent the data?</span>
+<span id="cb24-73"><a href="#cb24-73" aria-hidden="true" tabindex="-1"></a><span class="ss">4.  </span>**Extras** — stats, facets, themes, coordinates</span>
 <span id="cb24-74"><a href="#cb24-74" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-75"><a href="#cb24-75" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb24-75"><a href="#cb24-75" aria-hidden="true" tabindex="-1"></a>------------------------------------------------------------------------</span>
 <span id="cb24-76"><a href="#cb24-76" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb24-77"><a href="#cb24-77" aria-hidden="true" tabindex="-1"></a><span class="fu">## The Grammar of Graphics — Layers</span></span>
 <span id="cb24-78"><a href="#cb24-78" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb24-79"><a href="#cb24-79" aria-hidden="true" tabindex="-1"></a>ggplot2 is built on Leland Wilkinson's *Grammar of Graphics*. A plot is made of **stacked layers**:</span>
 <span id="cb24-80"><a href="#cb24-80" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-81"><a href="#cb24-81" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Layer <span class="pp">|</span> What it does <span class="pp">|</span></span>
-<span id="cb24-82"><a href="#cb24-82" aria-hidden="true" tabindex="-1"></a><span class="pp">|---|---|</span></span>
-<span id="cb24-83"><a href="#cb24-83" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> <span class="in">`data`</span> <span class="pp">|</span> The dataset <span class="pp">|</span></span>
-<span id="cb24-84"><a href="#cb24-84" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> <span class="in">`aes()`</span> <span class="pp">|</span> Maps variables to visual properties <span class="pp">|</span></span>
-<span id="cb24-85"><a href="#cb24-85" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> <span class="in">`geom_*()`</span> <span class="pp">|</span> The actual chart shape <span class="pp">|</span></span>
-<span id="cb24-86"><a href="#cb24-86" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> <span class="in">`stat_*()`</span> <span class="pp">|</span> Statistical transformations <span class="pp">|</span></span>
-<span id="cb24-87"><a href="#cb24-87" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> <span class="in">`facet_*()`</span> <span class="pp">|</span> Split into sub-plots <span class="pp">|</span></span>
-<span id="cb24-88"><a href="#cb24-88" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> <span class="in">`coord_*()`</span> <span class="pp">|</span> Coordinate system <span class="pp">|</span></span>
-<span id="cb24-89"><a href="#cb24-89" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> <span class="in">`theme_*()`</span> <span class="pp">|</span> Non-data styling <span class="pp">|</span></span>
+<span id="cb24-81"><a href="#cb24-81" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Layer       <span class="pp">|</span> What it does                        <span class="pp">|</span></span>
+<span id="cb24-82"><a href="#cb24-82" aria-hidden="true" tabindex="-1"></a><span class="pp">|-------------|-------------------------------------|</span></span>
+<span id="cb24-83"><a href="#cb24-83" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> <span class="in">`data`</span>      <span class="pp">|</span> The dataset                         <span class="pp">|</span></span>
+<span id="cb24-84"><a href="#cb24-84" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> <span class="in">`aes()`</span>     <span class="pp">|</span> Maps variables to visual properties <span class="pp">|</span></span>
+<span id="cb24-85"><a href="#cb24-85" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> <span class="in">`geom_*()`</span>  <span class="pp">|</span> The actual chart shape              <span class="pp">|</span></span>
+<span id="cb24-86"><a href="#cb24-86" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> <span class="in">`stat_*()`</span>  <span class="pp">|</span> Statistical transformations         <span class="pp">|</span></span>
+<span id="cb24-87"><a href="#cb24-87" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> <span class="in">`facet_*()`</span> <span class="pp">|</span> Split into sub-plots                <span class="pp">|</span></span>
+<span id="cb24-88"><a href="#cb24-88" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> <span class="in">`coord_*()`</span> <span class="pp">|</span> Coordinate system                   <span class="pp">|</span></span>
+<span id="cb24-89"><a href="#cb24-89" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> <span class="in">`theme_*()`</span> <span class="pp">|</span> Non-data styling                    <span class="pp">|</span></span>
 <span id="cb24-90"><a href="#cb24-90" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-91"><a href="#cb24-91" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb24-91"><a href="#cb24-91" aria-hidden="true" tabindex="-1"></a>------------------------------------------------------------------------</span>
 <span id="cb24-92"><a href="#cb24-92" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb24-93"><a href="#cb24-93" aria-hidden="true" tabindex="-1"></a><span class="fu">## Essential Elements</span></span>
 <span id="cb24-94"><a href="#cb24-94" aria-hidden="true" tabindex="-1"></a></span>
@@ -1421,7 +1428,7 @@ $ SCIENCE &lt;dbl&gt; 15, 16, 16, 31, 25, 16, 25, 27, 15, 37, 42, 22, 32, 36, 35
 <span id="cb24-113"><a href="#cb24-113" aria-hidden="true" tabindex="-1"></a>       <span class="fu">aes</span>(<span class="at">x =</span> MATHS))</span>
 <span id="cb24-114"><a href="#cb24-114" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb24-115"><a href="#cb24-115" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-116"><a href="#cb24-116" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb24-116"><a href="#cb24-116" aria-hidden="true" tabindex="-1"></a>------------------------------------------------------------------------</span>
 <span id="cb24-117"><a href="#cb24-117" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb24-118"><a href="#cb24-118" aria-hidden="true" tabindex="-1"></a><span class="fu">## Geometric Objects (geoms)</span></span>
 <span id="cb24-119"><a href="#cb24-119" aria-hidden="true" tabindex="-1"></a></span>
@@ -1573,7 +1580,7 @@ $ SCIENCE &lt;dbl&gt; 15, 16, 16, 31, 25, 16, 25, 27, 15, 37, 42, 22, 32, 36, 35
 <span id="cb24-283"><a href="#cb24-283" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb24-284"><a href="#cb24-284" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; **Why jitter?** Without it, points stack on top of each other and you lose information. Jitter adds a tiny random horizontal offset so you can see density.</span></span>
 <span id="cb24-285"><a href="#cb24-285" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-286"><a href="#cb24-286" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb24-286"><a href="#cb24-286" aria-hidden="true" tabindex="-1"></a>------------------------------------------------------------------------</span>
 <span id="cb24-287"><a href="#cb24-287" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb24-288"><a href="#cb24-288" aria-hidden="true" tabindex="-1"></a><span class="fu">## Statistics (stat)</span></span>
 <span id="cb24-289"><a href="#cb24-289" aria-hidden="true" tabindex="-1"></a></span>
@@ -1613,7 +1620,7 @@ $ SCIENCE &lt;dbl&gt; 15, 16, 16, 31, 25, 16, 25, 27, 15, 37, 42, 22, 32, 36, 35
 <span id="cb24-327"><a href="#cb24-327" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb24-328"><a href="#cb24-328" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; **`coord_cartesian()`** forces both axes to the same 0–100 scale so the comparison is fair and not visually distorted.</span></span>
 <span id="cb24-329"><a href="#cb24-329" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-330"><a href="#cb24-330" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb24-330"><a href="#cb24-330" aria-hidden="true" tabindex="-1"></a>------------------------------------------------------------------------</span>
 <span id="cb24-331"><a href="#cb24-331" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb24-332"><a href="#cb24-332" aria-hidden="true" tabindex="-1"></a><span class="fu">## Facets</span></span>
 <span id="cb24-333"><a href="#cb24-333" aria-hidden="true" tabindex="-1"></a></span>
@@ -1645,7 +1652,7 @@ $ SCIENCE &lt;dbl&gt; 15, 16, 16, 31, 25, 16, 25, 27, 15, 37, 42, 22, 32, 36, 35
 <span id="cb24-363"><a href="#cb24-363" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb24-364"><a href="#cb24-364" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; **facet_wrap vs facet_grid:** </span><span class="in">`facet_wrap`</span><span class="at"> flows panels like text — it wraps into rows automatically. </span><span class="in">`facet_grid`</span><span class="at"> is rigid and always stays in a single row/column grid.</span></span>
 <span id="cb24-365"><a href="#cb24-365" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-366"><a href="#cb24-366" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb24-366"><a href="#cb24-366" aria-hidden="true" tabindex="-1"></a>------------------------------------------------------------------------</span>
 <span id="cb24-367"><a href="#cb24-367" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb24-368"><a href="#cb24-368" aria-hidden="true" tabindex="-1"></a><span class="fu">## Coordinates</span></span>
 <span id="cb24-369"><a href="#cb24-369" aria-hidden="true" tabindex="-1"></a></span>
@@ -1663,7 +1670,7 @@ $ SCIENCE &lt;dbl&gt; 15, 16, 16, 31, 25, 16, 25, 27, 15, 37, 42, 22, 32, 36, 35
 <span id="cb24-383"><a href="#cb24-383" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span>
 <span id="cb24-384"><a href="#cb24-384" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb24-385"><a href="#cb24-385" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-386"><a href="#cb24-386" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb24-386"><a href="#cb24-386" aria-hidden="true" tabindex="-1"></a>------------------------------------------------------------------------</span>
 <span id="cb24-387"><a href="#cb24-387" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb24-388"><a href="#cb24-388" aria-hidden="true" tabindex="-1"></a><span class="fu">## Themes</span></span>
 <span id="cb24-389"><a href="#cb24-389" aria-hidden="true" tabindex="-1"></a></span>
@@ -1689,26 +1696,26 @@ $ SCIENCE &lt;dbl&gt; 15, 16, 16, 31, 25, 16, 25, 27, 15, 37, 42, 22, 32, 36, 35
 <span id="cb24-415"><a href="#cb24-415" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb24-416"><a href="#cb24-416" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; **My preference:** </span><span class="in">`theme_minimal()`</span><span class="at"> — clean, no unnecessary gridlines or grey background. Lets the data speak.</span></span>
 <span id="cb24-417"><a href="#cb24-417" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-418"><a href="#cb24-418" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb24-418"><a href="#cb24-418" aria-hidden="true" tabindex="-1"></a>------------------------------------------------------------------------</span>
 <span id="cb24-419"><a href="#cb24-419" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb24-420"><a href="#cb24-420" aria-hidden="true" tabindex="-1"></a><span class="fu">## Key Takeaways</span></span>
 <span id="cb24-421"><a href="#cb24-421" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb24-422"><a href="#cb24-422" aria-hidden="true" tabindex="-1"></a>By working through this exercise, I've learned:</span>
 <span id="cb24-423"><a href="#cb24-423" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-424"><a href="#cb24-424" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>ggplot2 builds plots in **layers** — each <span class="in">`+`</span> adds something new</span>
-<span id="cb24-425"><a href="#cb24-425" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span><span class="in">`aes()`</span> *inside* the call maps data to visuals; arguments *outside* set fixed values</span>
-<span id="cb24-426"><a href="#cb24-426" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>Geoms determine the chart type — and they can be **combined**</span>
-<span id="cb24-427"><a href="#cb24-427" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span><span class="in">`stat_summary()`</span> lets you overlay computed statistics (like means) on any chart</span>
-<span id="cb24-428"><a href="#cb24-428" aria-hidden="true" tabindex="-1"></a><span class="ss">5. </span>Facets are a powerful alternative to colour-coding when you have many groups</span>
-<span id="cb24-429"><a href="#cb24-429" aria-hidden="true" tabindex="-1"></a><span class="ss">6. </span>Themes are purely cosmetic — <span class="in">`theme_minimal()`</span> is clean and professional</span>
+<span id="cb24-424"><a href="#cb24-424" aria-hidden="true" tabindex="-1"></a><span class="ss">1.  </span>ggplot2 builds plots in **layers** — each <span class="in">`+`</span> adds something new</span>
+<span id="cb24-425"><a href="#cb24-425" aria-hidden="true" tabindex="-1"></a><span class="ss">2.  </span><span class="in">`aes()`</span> *inside* the call maps data to visuals; arguments *outside* set fixed values</span>
+<span id="cb24-426"><a href="#cb24-426" aria-hidden="true" tabindex="-1"></a><span class="ss">3.  </span>Geoms determine the chart type — and they can be **combined**</span>
+<span id="cb24-427"><a href="#cb24-427" aria-hidden="true" tabindex="-1"></a><span class="ss">4.  </span><span class="in">`stat_summary()`</span> lets you overlay computed statistics (like means) on any chart</span>
+<span id="cb24-428"><a href="#cb24-428" aria-hidden="true" tabindex="-1"></a><span class="ss">5.  </span>Facets are a powerful alternative to colour-coding when you have many groups</span>
+<span id="cb24-429"><a href="#cb24-429" aria-hidden="true" tabindex="-1"></a><span class="ss">6.  </span>Themes are purely cosmetic — <span class="in">`theme_minimal()`</span> is clean and professional</span>
 <span id="cb24-430"><a href="#cb24-430" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-431"><a href="#cb24-431" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb24-431"><a href="#cb24-431" aria-hidden="true" tabindex="-1"></a>------------------------------------------------------------------------</span>
 <span id="cb24-432"><a href="#cb24-432" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb24-433"><a href="#cb24-433" aria-hidden="true" tabindex="-1"></a><span class="fu">## References</span></span>
 <span id="cb24-434"><a href="#cb24-434" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-435"><a href="#cb24-435" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Hadley Wickham (2023) <span class="co">[</span><span class="ot">ggplot2: Elegant Graphics for Data Analysis</span><span class="co">](https://ggplot2-book.org/)</span></span>
-<span id="cb24-436"><a href="#cb24-436" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Winston Chang (2013) <span class="co">[</span><span class="ot">R Graphics Cookbook</span><span class="co">](https://r-graphics.org/)</span></span>
-<span id="cb24-437"><a href="#cb24-437" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Kieran Healy (2019) <span class="co">[</span><span class="ot">Data Visualization: A Practical Introduction</span><span class="co">](https://socviz.co/)</span></span>
+<span id="cb24-435"><a href="#cb24-435" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Hadley Wickham (2023) <span class="co">[</span><span class="ot">ggplot2: Elegant Graphics for Data Analysis</span><span class="co">](https://ggplot2-book.org/)</span></span>
+<span id="cb24-436"><a href="#cb24-436" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Winston Chang (2013) <span class="co">[</span><span class="ot">R Graphics Cookbook</span><span class="co">](https://r-graphics.org/)</span></span>
+<span id="cb24-437"><a href="#cb24-437" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Kieran Healy (2019) <span class="co">[</span><span class="ot">Data Visualization: A Practical Introduction</span><span class="co">](https://socviz.co/)</span></span>
 </code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
 </div></div></div></div></div>
 </div> <!-- /content -->

@@ -25,10 +25,10 @@ This exercise walks through the core building blocks of **ggplot2** — R's gram
 
 The data has **7 variables**:
 
-- **Categorical**: `ID`, `CLASS`, `GENDER`, `RACE`
-- **Continuous**: `MATHS`, `ENGLISH`, `SCIENCE`
+-   **Categorical**: `ID`, `CLASS`, `GENDER`, `RACE`
+-   **Continuous**: `MATHS`, `ENGLISH`, `SCIENCE`
 
----
+------------------------------------------------------------------------
 
 ## Getting Started
 
@@ -49,7 +49,7 @@ glimpse(exam_data)
 
 > **What I see:** 322 students, scores ranging widely — MATHS goes from single digits to near-perfect. Should be interesting to visualise!
 
----
+------------------------------------------------------------------------
 
 ## Why ggplot2?
 
@@ -61,28 +61,28 @@ hist(exam_data$MATHS)
 
 But ggplot2 gives us a **grammar** — a structured, composable way of building charts. Instead of memorising different function signatures for every plot type, you always think in terms of:
 
-1. **Data** — what am I plotting?
-2. **Aesthetics** — what maps to x, y, colour, size?
-3. **Geom** — what shape should represent the data?
-4. **Extras** — stats, facets, themes, coordinates
+1.  **Data** — what am I plotting?
+2.  **Aesthetics** — what maps to x, y, colour, size?
+3.  **Geom** — what shape should represent the data?
+4.  **Extras** — stats, facets, themes, coordinates
 
----
+------------------------------------------------------------------------
 
 ## The Grammar of Graphics — Layers
 
 ggplot2 is built on Leland Wilkinson's *Grammar of Graphics*. A plot is made of **stacked layers**:
 
-| Layer | What it does |
-|---|---|
-| `data` | The dataset |
-| `aes()` | Maps variables to visual properties |
-| `geom_*()` | The actual chart shape |
-| `stat_*()` | Statistical transformations |
-| `facet_*()` | Split into sub-plots |
-| `coord_*()` | Coordinate system |
-| `theme_*()` | Non-data styling |
+| Layer       | What it does                        |
+|-------------|-------------------------------------|
+| `data`      | The dataset                         |
+| `aes()`     | Maps variables to visual properties |
+| `geom_*()`  | The actual chart shape              |
+| `stat_*()`  | Statistical transformations         |
+| `facet_*()` | Split into sub-plots                |
+| `coord_*()` | Coordinate system                   |
+| `theme_*()` | Non-data styling                    |
 
----
+------------------------------------------------------------------------
 
 ## Essential Elements
 
@@ -103,7 +103,7 @@ ggplot(data = exam_data,
        aes(x = MATHS))
 ```
 
----
+------------------------------------------------------------------------
 
 ## Geometric Objects (geoms)
 
@@ -255,7 +255,7 @@ ggplot(data = exam_data,
 
 > **Why jitter?** Without it, points stack on top of each other and you lose information. Jitter adds a tiny random horizontal offset so you can see density.
 
----
+------------------------------------------------------------------------
 
 ## Statistics (stat)
 
@@ -295,7 +295,7 @@ ggplot(data = exam_data,
 
 > **`coord_cartesian()`** forces both axes to the same 0–100 scale so the comparison is fair and not visually distorted.
 
----
+------------------------------------------------------------------------
 
 ## Facets
 
@@ -327,7 +327,7 @@ ggplot(data = exam_data,
 
 > **facet_wrap vs facet_grid:** `facet_wrap` flows panels like text — it wraps into rows automatically. `facet_grid` is rigid and always stays in a single row/column grid.
 
----
+------------------------------------------------------------------------
 
 ## Coordinates
 
@@ -345,7 +345,7 @@ ggplot(data = exam_data,
   theme_minimal()
 ```
 
----
+------------------------------------------------------------------------
 
 ## Themes
 
@@ -371,23 +371,23 @@ base_plot + theme_minimal() + labs(title = "theme_minimal()")
 
 > **My preference:** `theme_minimal()` — clean, no unnecessary gridlines or grey background. Lets the data speak.
 
----
+------------------------------------------------------------------------
 
 ## Key Takeaways
 
 By working through this exercise, I've learned:
 
-1. ggplot2 builds plots in **layers** — each `+` adds something new
-2. `aes()` *inside* the call maps data to visuals; arguments *outside* set fixed values
-3. Geoms determine the chart type — and they can be **combined**
-4. `stat_summary()` lets you overlay computed statistics (like means) on any chart
-5. Facets are a powerful alternative to colour-coding when you have many groups
-6. Themes are purely cosmetic — `theme_minimal()` is clean and professional
+1.  ggplot2 builds plots in **layers** — each `+` adds something new
+2.  `aes()` *inside* the call maps data to visuals; arguments *outside* set fixed values
+3.  Geoms determine the chart type — and they can be **combined**
+4.  `stat_summary()` lets you overlay computed statistics (like means) on any chart
+5.  Facets are a powerful alternative to colour-coding when you have many groups
+6.  Themes are purely cosmetic — `theme_minimal()` is clean and professional
 
----
+------------------------------------------------------------------------
 
 ## References
 
-- Hadley Wickham (2023) [ggplot2: Elegant Graphics for Data Analysis](https://ggplot2-book.org/)
-- Winston Chang (2013) [R Graphics Cookbook](https://r-graphics.org/)
-- Kieran Healy (2019) [Data Visualization: A Practical Introduction](https://socviz.co/)
+-   Hadley Wickham (2023) [ggplot2: Elegant Graphics for Data Analysis](https://ggplot2-book.org/)
+-   Winston Chang (2013) [R Graphics Cookbook](https://r-graphics.org/)
+-   Kieran Healy (2019) [Data Visualization: A Practical Introduction](https://socviz.co/)

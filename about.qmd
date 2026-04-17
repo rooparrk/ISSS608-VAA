@@ -1,9 +1,48 @@
 ---
-title: "About"
+title: ""
 ---
 
-About this site
+```{=html}
+<!-- ============================================
+     ABOUT PAGE — about.qmd
+     Uses: .about-page styles added to styles.css
+     Images needed: images/snoopy-balloon.png
+                    images/snoopy-teacher.png
+     ============================================ -->
 
-```{r}
-1 + 1
+
+
+
+  ☁️  ☁️
+
+  About ☁️
+
+  
+    
+    
+
+      
+        Hey, Hi, Hello! Thanks for visiting my page, where I take you through my experiences in
+        ISSS608 Visual Analytics and Applications, a small part of my Masters of IT in Business journey in         SMU.
+      
+        Hope that your time in this course is as exciting as mine was! ☁️
+      
+      
+      
+        SMU MITB
+        Visual Analytics
+        ISSS608
+        R & Quarto
+      
+    
+
+    
+    
+  
+
+  
+  
+  Check out my other adventures... 🐾
+
+
 ```

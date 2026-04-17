@@ -123,3 +123,90 @@ hr {
   border-color: #c9bee8;
   opacity: 0.6;
 }
+
+/* About page styles */
+
+.about-page {
+  max-width: 820px;
+  margin: 3rem auto;
+  padding: 0 1rem;
+}
+
+.about-clouds {
+  text-align: center;
+  font-size: 1.8rem;
+  opacity: 0.35;
+  margin-bottom: 1.5rem;
+  letter-spacing: 1rem;
+}
+
+.about-heading {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  color: #2d2850;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  text-align: left; 
+}
+
+.about-card {
+  background: #ffffff;
+  border: 1px solid #c9bee8;
+  border-radius: 20px;
+  padding: 1.8rem 2rem;
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+.about-snoopy-left {
+  width: 90px;
+  flex-shrink: 0;
+}
+
+.about-snoopy-right {
+  width: 100px;
+  flex-shrink: 0;
+  margin-top: 0.5rem;
+}
+
+.about-text p {
+  font-size: 0.95rem;
+  color: #2d2850;
+  line-height: 1.8;
+  margin-bottom: 0.9rem;
+}
+
+.about-text strong {
+  color: #4a3f7a;
+}
+
+.about-tags {
+  margin-top: 0.8rem;
+}
+
+.tag {
+  display: inline-block;
+  background: #e8e2f8;
+  color: #4a3f7a;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  padding: 4px 12px;
+  margin: 3px 2px;
+  font-family: 'Lato', sans-serif;
+}
+
+.about-divider {
+  border: none;
+  border-top: 1px solid #c9bee8;
+  margin: 2rem 0;
+  opacity: 0.6;
+}
+
+.section-label {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 1.4rem;
+  color: #9b8dd4;
+  margin-bottom: 1.2rem;
+}

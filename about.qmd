@@ -3,46 +3,40 @@ title: ""
 ---
 
 ```{=html}
-<!-- ============================================
-     ABOUT PAGE — about.qmd
-     Uses: .about-page styles added to styles.css
-     Images needed: images/snoopy-balloon.png
-                    images/snoopy-teacher.png
-     ============================================ -->
+<div class="about-page">
 
+  <div class="about-clouds">☁️ ☁️</div>
 
+  <h1 class="about-heading">About ☁️</h1>
 
+  <div class="about-card">
 
-  ☁️  ☁️
+    <img src="images/snoopy-balloon.jpg" alt="Snoopy with balloons" class="about-snoopy-left" />
 
-  About ☁️
-
-  
-    
-    
-
-      
+    <div class="about-text">
+      <p>
         Hey, Hi, Hello! Thanks for visiting my page, where I take you through my experiences in
-        ISSS608 Visual Analytics and Applications, a small part of my Masters of IT in Business journey in         SMU.
-      
-        Hope that your time in this course is as exciting as mine was! ☁️
-      
-      
-      
-        SMU MITB
-        Visual Analytics
-        ISSS608
-        R & Quarto
-      
-    
+        <strong>ISSS608 Visual Analytics and Applications</strong> a small part of my Masters of IT in            Business journey in SMU.
+      </p>
 
-    
-    
-  
-
-  
-  
-  Check out my other adventures... 🐾
+      <p>I hope you have as much fun as I did! ☁️</p>
 
 
+      <div class="about-tags">
+        <span class="tag">SMU MITB</span>
+        <span class="tag">Visual Analytics</span>
+        <span class="tag">ISSS608</span>
+        <span class="tag">R &amp; Quarto</span>
+      </div>
+    </div>
+
+  </div>
+
+  <hr class="about-divider" />
+
+  <p class="section-label">Check out my other adventures... 🐾</p>
+
+  <img src="images/snoopy-teacher.jpg" alt="Snoopy teacher" class="about-snoopy-right" />
+
+</div>
 ```

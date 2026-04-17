@@ -8,17 +8,21 @@ website:
   navbar:
     logo: images/snoopy-main.png
     title: "Roopa's Visual Cloud"
+    left:
+    - text: "{{< fa house-chimney >}}"
+      href: index.qmd
+    - text: "{{< fa cloud >}}"
+      href: about.qmd
+    - text: "{{< fa seedling >}}"
+      href: https://github.com/rooparrk
+    
     right:
-      - text: Home
-        href: index.qmd
-      - text: Hands-on
-        href: Hands-on_Ex/
-      - text: Take-Home
-        href: Take-Home_Ex/
-      - text: In-Class
-        href: In-Class_Ex/
-      - text: About
-        href: about.qmd
+    - text: Hands-on
+      href: Hands-on_Ex/
+    - text: Take-Home
+      href: Take-Home_Ex/
+    - text: In-Class
+      href: In-Class_Ex/
 
   page-footer:
     center: "Roopa ☁️ | Visual Analytics"

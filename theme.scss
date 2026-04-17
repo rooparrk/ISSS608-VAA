@@ -1,39 +1,35 @@
 /*-- scss:defaults --*/
 
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&family=Quicksand:wght@400;500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Lato:wght@300;400&display=swap');
 
-// palette
-$body-bg: #F8FBFF;
-$body-color: #2b2b2b;
+// Palette
+$body-bg:     #f5f3fc;
+$body-color:  #2d2850;
 
-$navbar-bg: #FFFFFF;
-$navbar-fg: #5A8DEE;
-$navbar-hl: #AFCBFF;
+$navbar-bg:   #e8e2f8;
+$navbar-fg:   #4a3f7a;
+$navbar-hl:   #9b8dd4;
 
-$link-color: #5A8DEE;
+$link-color:  #9b8dd4;
 
-$footer-bg: #F8FBFF;
+$footer-bg:   #f5f3fc;
 
 // Fonts
-$font-family-base: 'Nunito', sans-serif;
-$headings-font-family: 'Quicksand', sans-serif;
+$font-family-base:      'Lato', sans-serif;
+$headings-font-family:  'Playfair Display', serif;
 
 /*-- scss:rules --*/
 
-// Headings
 h1, h2, h3 {
-  font-weight: 500;
+  font-weight: 600;
 }
 
-// Navbar
 .navbar {
-  border-bottom: 1px solid #E6EEF8;
+  border-bottom: 1px solid #c9bee8;
 }
 
-// Body spacing
 body {
   max-width: 1100px;
   margin: auto;
+  font-weight: 300;
 }

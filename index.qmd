@@ -2,9 +2,6 @@
 title: ""
 ---
 
-<div class="site-title">
-Roopa’s Visual Cloud ☁️
-</div>
 
 ![](images/cloud.png){class="float-left"}
 ![](images/cloud.png){class="float-right"}

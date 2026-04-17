@@ -2,12 +2,19 @@
 title: ""
 ---
 
+<div class="site-title">
+Roopa’s Visual Cloud ☁️
+</div>
 
 ![](images/cloud.png){class="float-left"}
 ![](images/cloud.png){class="float-right"}
 
 
 # Hi, I’m Roopa ☁️
+
+<div class="subtitle">
+a soft journey through visual analytics ☁️
+</div>
 
 <div class="intro">
 A visual analytics journey presented in a wholesome space 🐾

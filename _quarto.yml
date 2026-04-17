@@ -12,7 +12,7 @@ website:
     - text: "{{< fa hand-sparkles >}} Hands-on"
       menu:
         - text: "Exercise 1: ggplot2"
-          href: Hands-on_ex/Hands-on_ex01/Hands-on_ex01.html
+          href: Hands-on_Ex/Hands-on_Ex01/Hands-on_Ex01.html
     - text: "{{< fa magnifying-glass-chart >}} Take-Home"
       href: Take-Home_Ex/
     - text: "{{< fa pen-to-square >}} In-Class"

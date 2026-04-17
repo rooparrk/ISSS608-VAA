@@ -9,6 +9,17 @@ website:
     logo: images/snoopy-main.png
     title: "Roopa's Visual Cloud"
     left:
+    - text: "{{< fa hand-sparkles >}} Hands-on"
+      menu:
+        - text: "Exercise 1: ggplot2"
+          href: hands-on_ex/hands-on_ex01/hands-on_ex01.html
+    - text: "{{< fa magnifying-glass-chart >}} Take-Home"
+      href: Take-Home_Ex/
+    - text: "{{< fa pen-to-square >}} In-Class"
+      href: In-Class_Ex/
+
+    
+    right:
     - text: "{{< fa house-chimney >}}"
       href: index.qmd
     - text: "{{< fa cloud >}}"
@@ -16,13 +27,6 @@ website:
     - text: "{{< fa seedling >}}"
       href: https://github.com/rooparrk
     
-    right:
-    - text: Hands-on
-      href: Hands-on_Ex/
-    - text: Take-Home
-      href: Take-Home_Ex/
-    - text: In-Class
-      href: In-Class_Ex/
 
   page-footer:
     center: "Roopa ☁️ | Visual Analytics"

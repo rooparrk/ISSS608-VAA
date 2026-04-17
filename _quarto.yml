@@ -3,11 +3,11 @@ project:
   output-dir: _site
 
 website:
-  title: "Roopa's Visual Cloud"
+  title: "Roo's Visual Cloud"
 
   navbar:
     logo: images/snoopy-main.png
-    title: "Roopa's Visual Cloud"
+    title: "Roo's Visual Cloud"
     left:
     - text: "{{< fa hand-sparkles >}} Hands-on"
       menu:

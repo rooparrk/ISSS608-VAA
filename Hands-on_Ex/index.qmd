@@ -2,26 +2,23 @@
 title: "Hands-on Exercises 🧪"
 ---
 
-# Hands-on Exercises
 
-<div class="intro">
+::: intro
 A collection of guided exercises and practice work
-</div>
+:::
 
----
+------------------------------------------------------------------------
 
-::: {.grid}
-
+::::: grid
 ::: {.g-col-6 .card}
 ### Exercise 1
-Coming soon  
 
+Coming soon
 :::
 
 ::: {.g-col-6 .card}
 ### Exercise 2
-Coming soon  
 
+Coming soon
 :::
-
-:::
+:::::

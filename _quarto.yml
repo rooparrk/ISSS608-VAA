@@ -6,7 +6,7 @@ website:
   title: "Roopa's Visual Cloud"
 
   navbar:
-    logo: images/snoopy-icon.png
+    logo: images/snoopy-main.png
     title: "Roopa's Visual Cloud"
     right:
       - text: Home

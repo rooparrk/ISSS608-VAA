@@ -1,21 +1,19 @@
 ---
-title: "Take-home Exercises 🏠"
+title: "Take-Home Exercises 🏠"
 ---
 
-# Take-home Exercises
+# Take-Home Exercises
 
-<div class="intro">
+::: intro
 Assignments and deeper explorations
-</div>
+:::
 
----
+------------------------------------------------------------------------
 
-::: {.grid}
-
+:::: grid
 ::: {.g-col-6 .card}
 ### Assignment 1
-Coming soon  
 
+Coming soon
 :::
-
-:::
+::::

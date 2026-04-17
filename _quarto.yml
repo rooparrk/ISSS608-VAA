@@ -1,21 +1,33 @@
 project:
   type: website
+  output-dir: _site
 
 website:
-  title: "ISSS608-VAA"
+  title: "ISSS608 Visual Analytics ☁️"
+
   navbar:
     left:
-      - href: index.qmd
-        text: Home
-      - about.qmd
+      - text: Home
+        href: index.qmd
+      - text: Hands-on
+        href: Hands-on_Ex/
+      - text: Take-Home
+        href: Take-Home_Ex/
+      - text: In-Class
+        href: In-Class_Ex/
+      - text: About
+        href: about.qmd
+
+  page-footer:
+    center: "Roopa ☁️ | Visual Analytics"
 
 format:
   html:
     theme:
       - cosmo
-      - brand
+      - theme.scss
     css: styles.css
-    toc: true
+    toc: false
+    page-layout: full
 
 editor: visual
-

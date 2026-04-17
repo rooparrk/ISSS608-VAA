@@ -2,13 +2,18 @@
 title: ""
 ---
 
+
+![](images/cloud.png){class="float-left"}
+![](images/cloud.png){class="float-right"}
+
+
 # Hi, I’m Roopa ☁️
 
 <div class="intro">
 A visual analytics journey presented in a wholesome space 🐾
 </div>
 
-![](Images/snoopy-main.png){class="snoopy-img"}
+![](images/snoopy-main.jpg){class="hero-float"}
 
 ---
 
@@ -17,24 +22,30 @@ A visual analytics journey presented in a wholesome space 🐾
 ::: {.grid}
 
 ::: {.g-col-4 .card}
+![](images/snoopy-study.jpg){class="card-img"}
+
 ### 🧪 Hands-on Exercises
 Guided practice and learning  
 
-[View →](Hands-on_Ex/index.qmd)
+[View →](Hands-on_Ex/)
 :::
 
 ::: {.g-col-4 .card}
+![](images/snoopy-homework.jpg){class="card-img"}
+
 ### 🏠 Take-home Exercises
 Assignments and deeper work  
 
-[View →](Take-home_Ex/index.qmd)
+[View →](Take-home_Ex/)
 :::
 
 ::: {.g-col-4 .card}
+![](images/snoopy-class.jpg){class="card-img"}
+
 ### 🏫 In-class Exercises
 Session-based work  
 
-[View →](In-class_Ex/index.qmd)
+[View →](In-class_Ex/)
 :::
 
 :::

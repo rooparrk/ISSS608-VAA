@@ -1,21 +1,19 @@
 ---
-title: "In-class Exercises 🏫"
+title: "In-Class Exercises 🏫"
 ---
 
-# In-class Exercises
+# In-Class Exercises
 
-<div class="intro">
+::: intro
 Work completed during class sessions
-</div>
+:::
 
----
+------------------------------------------------------------------------
 
-::: {.grid}
-
+:::: grid
 ::: {.g-col-6 .card}
 ### Session 1
-Coming soon  
 
+Coming soon
 :::
-
-:::
+::::

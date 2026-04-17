@@ -1,0 +1,37 @@
+/*-- scss:defaults --*/
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&family=Quicksand:wght@400;500&display=swap');
+
+// palette
+$body-bg: #F8FBFF;
+$body-color: #2b2b2b;
+
+$navbar-bg: #FFFFFF;
+$navbar-fg: #5A8DEE;
+$navbar-hl: #AFCBFF;
+
+$link-color: #5A8DEE;
+
+$footer-bg: #F8FBFF;
+
+// Fonts
+$font-family-base: 'Nunito', sans-serif;
+$headings-font-family: 'Quicksand', sans-serif;
+
+/*-- scss:rules --*/
+
+// Headings
+h1, h2, h3 {
+  font-weight: 500;
+}
+
+// Navbar
+.navbar {
+  border-bottom: 1px solid #E6EEF8;
+}
+
+// Body spacing
+body {
+  max-width: 1100px;
+  margin: auto;
+}

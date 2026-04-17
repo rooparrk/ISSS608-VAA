@@ -3,7 +3,7 @@ project:
   output-dir: _site
 
 website:
-  title: "ISSS608 Visual Analytics ☁️"
+  title: "Roopa’s Visual Cloud ☁️"
 
   navbar:
     left:

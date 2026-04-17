@@ -13,12 +13,9 @@ Roopa’s Visual Cloud ☁️
 # Hi, I’m Roopa ☁️
 
 <div class="subtitle">
-a soft journey through visual analytics ☁️
+a soft journey through visual analytics 🐾
 </div>
 
-<div class="intro">
-A visual analytics journey presented in a wholesome space 🐾
-</div>
 
 ![](images/snoopy-main.jpg){class="hero-float"}
 
